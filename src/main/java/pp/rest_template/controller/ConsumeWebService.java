@@ -32,6 +32,7 @@ public class ConsumeWebService {
         String code = "";
 
 //  №1 Получить список всех пользователей.
+        
         ResponseEntity<List<User>> response = restTemplate.exchange(requestUrl,
                 HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
 
